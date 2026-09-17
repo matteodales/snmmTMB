@@ -1,0 +1,16 @@
+# compiled TMB models (rebuilt by the *_compile.R scripts / TMB::compile())
+src/*.o
+src/*.so
+src/*.dll
+
+# per-job files and logs of a simulation run; only the merged *_results.RDS are kept
+**/results/*_job*_of*.RDS
+**/logs/
+
+# default graphics device output of a non-interactive Rscript
+Rplots.pdf
+
+# R session leftovers
+.Rhistory
+.RData
+.Rproj.user/
